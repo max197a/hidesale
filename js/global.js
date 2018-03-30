@@ -19,6 +19,13 @@ jQuery(document).ready(function($) {
         }
     });
 
+    
+
+    $(document).on("click", ".close-popup", function(e) {
+        e.preventDefault();
+        $.fancybox.close()
+    });
+
     $(".btn-menu").click(function() {
         $(this).parents("body").toggleClass("menu-open");
         return false;

@@ -2807,7 +2807,7 @@ ol.terms-info ol li .num {
 }
 @media only screen and (max-width: 1626px) {
   .products-blocks .block {
-    width: 19.5%;
+    width: 20%;
     max-width: 100%;
     min-width: 150px;
   }
@@ -4261,6 +4261,24 @@ ol.terms-info ol li .num {
     background: url(../images/cancel.svg) center center no-repeat;
     background-size: contain;
 }
+.inform-area.main-fixed {
+  padding-bottom: 0;
+}
+.inform-area.main-fixed .section:last-child {
+  margin-bottom: 0;
+}
+.inform-area.main-fixed .section:last-child .products-blocks {
+  margin-bottom: 20px;
+}
+.inform-area.main-fixed .section:last-child .aligncenter {
+  margin: 10px auto 50px;
+}
+#header {
+  z-index: 9999;
+}
+.main-inform {
+  padding-top: 0
+}
 
 @media only screen and (max-width: 1023px){
   /*support - line 52*/
@@ -4287,6 +4305,9 @@ ol.terms-info ol li .num {
   /*index - line 4 */
 }
 @media only screen and (max-width: 767px){
+  .fancybox-close-small {
+    right: 0
+  }
   .inform-area .section {
     margin-bottom: 20px;
   }
@@ -4307,6 +4328,22 @@ ol.terms-info ol li .num {
   }
   .tablet-hidden {
     display: none;
+  }
+  #header .store-holder .heading a {
+    padding-top: 50px;
+    margin-top: -60px;
+  }
+  #header .store-holder .heading a:before {
+    top: 0px;
+  }
+  #header .store-holder .heading a:after {
+    top: 10px;
+  }
+  .inform-area.main-fixed .section:last-child .products-blocks {
+    margin-bottom: 0;
+  }
+  .inform-area.main-fixed .section:last-child .aligncenter {
+    margin: -10px auto 20px;
   }
   
 }
