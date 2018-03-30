@@ -4237,6 +4237,31 @@ ol.terms-info ol li .num {
   z-index: 1;
 }
 /*lk - line 48*/
+
+.section.comp-auctions {
+  margin-bottom: 30px;
+}
+.section.comp-auctions .products-blocks {
+  margin-bottom: 0;
+}
+.fancybox-close-small {
+    position: absolute;
+    top: 0;
+    right: 51px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    background: transparent;
+    z-index: 10;
+    cursor: pointer;
+    background: url(../images/cancel.svg) center center no-repeat;
+    background-size: contain;
+}
+
 @media only screen and (max-width: 1023px){
   /*support - line 52*/
   .accordion .opener:hover {
@@ -4254,6 +4279,12 @@ ol.terms-info ol li .num {
     padding-bottom: 0;
   }
   /*current-promo-auction - line 44-45*/
+
+  /*index - line 4 */
+  .main-banner .one {
+    display: none;
+  }
+  /*index - line 4 */
 }
 @media only screen and (max-width: 767px){
   .inform-area .section {
@@ -4265,6 +4296,17 @@ ol.terms-info ol li .num {
   }
   .comp-auctions .products-blocks {
     margin-bottom: 10px;
+  }
+
+  .main-container {
+    display: block;
+    margin-bottom: -60px;
+  }
+  .mc-bottom.main-container {
+    margin-bottom: 42px;
+  }
+  .tablet-hidden {
+    display: none;
   }
   
 }
