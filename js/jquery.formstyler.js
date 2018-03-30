@@ -27,7 +27,7 @@
 			defaults = {
 				idSuffix: '-styler',
 				filePlaceholder: '',
-				fileBrowse: 'Выберите файлы на компьютере или перетащите их прямо сюда',
+				fileBrowse: 'Change',
 				fileNumber: 'Выбрано файлов: %s',
 				selectPlaceholder: 'Выберите...',
 				selectSearch: false,
