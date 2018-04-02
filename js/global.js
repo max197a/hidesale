@@ -26,10 +26,26 @@ jQuery(document).ready(function($) {
         $.fancybox.close()
     });
 
+    $(document).on("click", ".user-name", function(e) {
+        e.preventDefault();
+        $(this).parent().toggleClass("open-menu");
+        return false;
+    });
+
+    $(document).mouseup(function (e) {
+        var container = $(".user-holder");
+        if (container.has(e.target).length === 0){
+            $('.user-holder').removeClass("open-menu");
+        }
+    });
+
+    
+
     $(".btn-menu").click(function() {
         $(this).parents("body").toggleClass("menu-open");
         return false;
     });
+
     $(".link-copy").click(function() {
         $(this).parents(".row-frame").addClass("active");
         return false;
@@ -70,10 +86,6 @@ jQuery(document).ready(function($) {
     function initFancybox() {
         $(".fancybox").fancybox({
             toolbar: true,
-
-            // What buttons should appear in the top right corner.
-            // Buttons will be created using templates from `btnTpl` option
-            // and they will be placed into toolbar (class="fancybox-toolbar"` element)
             buttons: [
                 'close'
             ]
